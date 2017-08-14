@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <title>首页</title>
+    <meta name="keywords" content="兴文石海,僰王山,兴文旅游,网页模板素材,兴文旅游景点,宜宾旅游" />
+    <meta name="description" content="" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollfollow.js"></script>
+    <script type="text/javascript" src="js/flash.js"></script>
+    <script type="text/javascript" src="js/int.js"></script>
+</head>
+<body>
+<div id="topBar">
+    <div class="wrapper">
+        <div class="l">游客您好，欢迎访问兴文旅游资讯网！</div>
+        <div class="r">
+            <a href="#" onclick="window.external.AddFavorite(location.href,'网页模板素材');">加入收藏</a>
+            <a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage(location.href);">设为首页</a>
+            <span>
+			<a href="/" target="_blank">旅游商城</a>|
+			<a href="" target="_blank">政务网</a>|
+			<a href="" target="_blank">English</a>
+			</span>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <div class="wrapper">
+        <div class="logo">
+            <a href="/"><img src="images/logo.gif" alt="兴文旅游资讯网" /></a>
+            <h1>兴文县旅游门户　兴文县旅游信息平台</h1>
+        </div>
+        <form target="_blank" action="/search.aspx" method="get">
+            <div class="search">
+                <dl>
+                    <dd>
+                        <a id="search_type1" onclick="select_search_type(1);return false;" href="#" class="current">景点</a>
+                    </dd>
+                    <dd><a id="search_type2" onclick="select_search_type(2);return false;" href="#">线路</a></dd>
+                    <dd><a id="search_type3" onclick="select_search_type(3);return false;" href="#">资讯</a></dd>
+                </dl>
+                <ul>
+                    <li><a href="/live/hotel_list.aspx" target="_blank">酒店住宿</a></li>
+                    <li><a href="/eat/foodshops.aspx" target="_blank">餐饮娱乐</a></li>
+                </ul>
+                <div>
+                    <input type="text" name="q" onfocus="if(this.value=='这是一个神奇的搜索'){this.value='';}" value="这是一个神奇的搜索" />
+                    <input name="search_type" id="search_type" value="1" type="hidden" />
+                    <button type="submit">搜索</button>
+                </div>
+                <p>
+                    <strong>热门搜索：</strong><a href="/search.aspx?search_type=1&q=%D0%CB%CE%C4%CA%AF%BA%A3">兴文石海</a><a href="/search.aspx?search_type=1&q=%83k%CD%F5%C9%BD%BE%B0%C7%F8">僰王山景区</a><a href="/search.aspx?search_type=3&q=+%CF%E3%CB%AE%C9%BD"> 香水山</a><a href="/search.aspx?search_type=3&q=qw">qw</a><a href="/search.aspx?search_type=1&q=adsf">adsf</a><a href="/search.aspx?search_type=1&q=%D1%CF%BC%D2%B6%B4">严家洞</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="nav">
+    <dl>
+        <div></div>
+        <dd><a href="/service" target="_blank" class="a1">旅游服务中心</a></dd>
+        <dd><a href="/diy/" target="_blank" class="a2">个性化线路设计</a></dd>
+        <dd><a href="/xuniyou/" target="_blank" class="a3">虚拟游</a></dd>
+    </dl>
+    <ul>
+        <li><a href="/index.aspx" class="a1">首页</a></li>
+        <li><a href="/eat" class="a2">吃</a></li>
+        <li><a href="/live" class="a3">住</a></li>
+        <li><a href="/traffic" class="a4">行</a></li>
+        <li><a href="/tour" class="a5">游</a></li>
+        <li><a href="/shop" class="a6">购</a></li>
+        <li><a href="/play" class="a7">娱</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    function select_search_type(n) {
+        document.getElementById('search_type1').className = '';
+        document.getElementById('search_type2').className = '';
+        document.getElementById('search_type3').className = '';
+        document.getElementById('search_type' + n).className = 'current';
+        document.getElementById('search_type').value = n;
+    }
+</script>
+<div id="main">
+    <div id="cate">
+        <a class="prev"></a>
+        <div class="scroll">
+            <ul>
+                <li>
+                    <strong>美食</strong>
+                    <a href="/eat/feature.aspx">特色美食</a>|<a href="/eat/foodshops.aspx">名菜馆</a>|<a href="/eat/culture.aspx">美食文化</a><br />
+                                                        <!--<a href="#">美食地图</a>|--><a href="#">美食达人</a>
+                </li>
+                <li>
+                    <strong>住宿</strong>
+                    <a href="/live/hotel_list.aspx?hotel_type=1">星级酒店</a>|<a href="/live/hotel_list.aspx?hotel_type=2">经济宾馆</a>|<a href="/live/hotel_list.aspx?hotel_type=4">农家乐</a><br />
+                    <a href="/?Live/" target="_blank" class="blue">酒店预订</a>
+                </li>
+                <li>
+                    <strong>旅游</strong>
+                    <a href="/tour/scenic.aspx">旅游景点</a>|<a href="/tour/line.aspx">精品路线</a>|<a href="/tour/rural.aspx">乡村旅游</a><br />
+                    <a href="/tour/guides.aspx">导游介绍</a>|<a href="//diy" class="blue">线路定制</a>|<a href="tour/travel_agency.aspx">旅行社</a>
+                </li>
+                <li>
+                    <strong>购物</strong>
+                    <a href="/shop/specialty.aspx">特产名物</a>|<a href="/shop/shopplace.aspx">购物场所</a>|<a href="/shop/article_list.aspx?cid=16">购物达人</a><br />
+                    <a href="/shop/article_list.aspx?cid=11">优惠活动</a>|<a href=" /?" class="red b">旅游商城</a>
+                </li>
+                <li>
+                    <strong>娱乐</strong>
+                    <a href="/play/match.aspx?type=2" class="b">旅游节庆</a>|<a href="/play/match.aspx?type=1">民族特色演出</a><br />
+                    <a href="/play/match.aspx?type=3">体育赛事</a>|<a href="/play/playplace.aspx">娱乐场所</a>
+                </li>
+                <li>
+                    <strong>服务</strong>
+                    <a href="/service/info.aspx">旅游概况</a>|<a href="/service/article.aspx">旅游资讯</a>|<a href="#">游客咨询</a><br />
+                    <a href="/service/interaction.aspx">旅游互动</a>|<a href="/service/toolinfo.aspx">旅行工具箱</a>
+                </li>
+            </ul>
+        </div>
+        <a class="next"></a>
+    </div>
+    <div id="index">
+        <div class="indexLeft">
+            <div class="itemA" id="banner"></div>
+            <script type="text/javascript" src="js/flashObject.js"></script>
+            <script type="text/javascript">
+                var flash = new sohuFlash("flash/banner.swf", "20", 730, 300, "7");
+                flash.addParam("quality", "high");
+                flash.addParam("wmode", "transparent");
+                flash.addVariable("image", "images/flashfocus0.jpg|images/flashfocus1.jpg|images/flashfocus2.jpg|images/flashfocus3.jpg");
+                flash.addVariable("stitle", "石海发现之旅|苗人习俗文化|探寻神秘僰人|倾情苗族歌舞");
+                flash.addVariable("info", "<h2><a href='/?play/match_detail.aspx?mid=1' target='_blank'>石海发现之旅</a></h2><p>兴文是一片神奇、美丽的土地。境内旅游资源丰富而独特。这里有国家重点风景名胜区、国家4A级景区、四川首家世界地质公园</p>|<h2><a href='' target='_blank'>苗人习俗文化</a></h2><p>族生活比较简朴，历来主食糯米，解放后逐渐改食籼米。辅之以小米、红苕、苞谷等。副食有家畜禽类，间有野生禽兽肉等。</p>|<h2><a href='' target='_blank'>探寻神秘僰人</a></h2><p>在地球上消失了400多年的僰人如今“复活”了，专家们近日在四川省宜宾市兴文县发现了僰人后裔，据估计，总数可能超过万人。</p>|<h2><a href='' target='_blank'>倾情苗族歌舞</a></h2><p>4月29日，兴文县500多名苗族干部、群众和古宋社区群众，身着节日盛装，走上街头，通过开展大游行、文艺表演等形式</p>");
+                flash.addVariable("stopTime", "3000");
+                flash.write("banner");
+            </script>
+            <div class="itemB">
+                <div class="player" id="picPlayer">
+                    <script type="text/javascript">
+                        var pic_width = 300; //图片宽度
+                        var pic_height = 200; //图片高度
+                        var button_pos = 4; //按扭位置 1左 2右 3上 4下
+                        var stop_time = 5000; //图片停留时间(1000为1秒钟)
+                        var show_text = 1; //是否显示文字标签 1显示 0不显示
+                        var txtcolor = "444444"; //文字色
+                        var bgcolor = "ffffff"; //背景色
+                        var imag = new Array();
+                        var link = new Array();
+                        var text = new Array();
+                        imag[1] = "images/133454091856436111.jpg";
+                        link[1] = "service/article_detail.aspx?aid=20";
+                        text[1] = "童心向党歌飞扬";
+                        imag[2] = "images/1334540813484828163.jpg";
+                        link[2] = "service/article_detail.aspx?aid=19";
+                        text[2] = "庆盛世歌团结 迎接第四届苗族花山节";
+                        imag[3] = "images/133454069963991586.jpg";
+                        link[3] = "service/article_detail.aspx?aid=14";
+                        text[3] = "国庆黄金周期间 兴文石海隆重上演";
+                        imag[4] = "images/135778331093068579.jpg";
+                        link[4] = "service/article_detail.aspx?aid=94";
+                        text[4] = "加强交流  共谋发展";
+
+                        var swf_height = show_text == 1 ? pic_height + 45 : pic_height;
+                        var pics = "", links = "", texts = "";
+                        for (var i = 1; i < imag.length; i++) {
+                            pics = pics + ("|" + imag[i]);
+                            links = links + ("|" + link[i]);
+                            texts = texts + ("|" + text[i]);
+                        }
+                        pics = pics.substring(1);
+                        links = links.substring(1);
+                        texts = texts.substring(1);
+                        document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="/?pub/shockwave/cabs/flash/swflash.cabversion=6,0,0,0" width="' + pic_width + '" height="' + swf_height + '">');
+                        document.write('<param name="movie" value="flash/focus.swf">');
+                        document.write('<param name="quality" value="high">');
+                        document.write('<param name="wmode" value="transparent">');
+                        document.write('<param name="FlashVars" value="pics=' + pics + '&links=' + links + '&texts=' + texts + '&pic_width=' + pic_width + '&pic_height=' + pic_height + '&show_text=' + show_text + '&txtcolor=' + txtcolor + '&bgcolor=' + bgcolor + '&button_pos=' + button_pos + '&stop_time=' + stop_time + '">');
+                        document.write('<embed src="flash/focus.swf" wmode="transparent" FlashVars="pics=' + pics + '&links=' + links + '&texts=' + texts + '&pic_width=' + pic_width + '&pic_height=' + pic_height + '&show_text=' + show_text + '&txtcolor=' + txtcolor + '&bgcolor=' + bgcolor + '&button_pos=' + button_pos + '&stop_time=' + stop_time + '" quality="high" width="' + pic_width + '" height="' + swf_height + '" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+                        document.write('</object>');
+                    </script>
+                </div>
+                <div class="hot">
+                    <ul>
+                        <li><a href="service/article_detail.aspx?aid=101" target="_blank">国土资源部世界地质公园网络办主任郑元来兴授课</a>
+                        </li>
+                        <li><a href="service/article_detail.aspx?aid=100" target="_blank">兴文县八大项目助推2013旅游发展</a></li>
+                        <li><a href="service/article_detail.aspx?aid=99" target="_blank">兴文县旅游局开展春节前旅游安全大检查</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <dl>
+                        <strong>[旅游资讯]<a href="service/article_detail.aspx?aid=101" target="_blank">国土资源部世界地质公园网络办主任</a></strong>
+                        <p><a href="service/article_detail.aspx?aid=101" target="_blank">[全文]</a></p>
+                    </dl>
+                    <ul>
+                        <li><a target="_blank" href="service/article_detail.aspx?aid=100">兴文县八大项目助推2013旅</a></li>
+                        <li><a target="_blank" href="service/article_detail.aspx?aid=92">世界地质公园再评估工作座</a></li>
+                        <li><a target="_blank" href="service/article_detail.aspx?aid=95">兴文世界地质公园启动地质</a></li>
+                        <li><a target="_blank" href="service/article_detail.aspx?aid=96">兴文世界地质公园召开中期</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrights">Collect from <a href="/">网页模板</a></div>
+            <div class="itemC">
+                <ul c>
+                    <li class="s1"><strong>旅游景点</strong>
+                        <div>
+                            <a href="tour/scenic_detail.aspx?sid=2" target="_blank"><img src="./images/timg.jpg" /></a><em><a
+                                href="tour/scenic_detail.aspx?sid=2" target="_blank">僰王山景区</a></em>
+                            <p>&nbsp; &nbsp; &nbsp; &nbsp; 僰王山原名博望山，她和兴文石海是兴文世界地质公园最耀眼的两颗明珠。僰王山中心景区位于宜宾市兴...<a href="tour/scenic_detail.aspx?sid=2">[详细]</a>
+                            </p></div>
+                    </li>
+                    <li class="s2"><strong>精品线路</strong>
+                        <div>
+                            <a href="tour/line_detail.aspx?sid=3" target="_blank"><img src="upload/line/small_13342872271079259.jpg" /></a><em><a href="tour/line_detail.aspx?lid=3">西部大峡谷温泉、兴文石海三日游</a></em>
+                            <p><a href="tour/line_detail.aspx?lid=3" target="_blank">[详细]</a></p></div>
+                    </li>
+                    <li class="s3"><strong>乡村旅游</strong>
+                        <div><a href="tour/rural_detail.aspx?rid=" target="_blank"><img src="upload/rural/small_" /></a><em><a href="tour/rural_detail.aspx?rid=" target="_blank"></a></em>
+                            <p><a href="tour/rural_detail.aspx?rid=" target="_blank">[详细]</a></p></div>
+                    </li>
+                    <li class="s4"><strong>特色演出</strong>
+                        <div>
+                            <a href="play/match_detail.aspx?mid="><img src="upload/match/small_" /></a><em><a href="play/match_detail.aspx?mid=" target="_blank"></a></em>
+                            <p><a href="play/match_detail.aspx?mid=" target="_blank">[详细]</a></p></div>
+                    </li>
+                    <li class="s5"><strong>旅游节庆</strong>
+                        <div>
+                            <a href="play/match_detail.aspx?mid=4"><img src="upload/match/small_1334304624467582952.jpg" /></a><em><a href="play/match_detail.aspx?mid=4" target="_blank">大坝高桩节</a></em>
+                            <p>&nbsp; &nbsp; &nbsp; &nbsp; 兴文县-大坝景区高桩，高桩又称高桩戏，一台高桩就是一组戏。表演时，主角站在离戏台三米高的铁桩上...<a href="play/match_detail.aspx?mid=4" target="_blank">[详细]</a>
+                            </p></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="itemD" id="btnPic">
+                <script type="text/javascript">
+                    var flash = new sohuFlash("flash/pic.swf", "20", 730, 120, "7");
+                    flash.addParam("quality", "high");
+                    flash.addParam("wmode", "transparent");
+                    flash.write("btnPic");
+                </script>
+            </div>
+            <div class="itemE">
+                <label>第一时间知道特价旅游信息<font>(*此服务随时可取消)</font></label>
+                <input type="text" value="常用EMAIL地址" onblur="if (value ==''){value='常用EMAIL地址'}" onfocus="if (value =='常用EMAIL地址'){value =''}" value="常用EMAIL地址" />
+                <button type="submit">订阅</button>
+
+            </div>
+            <div class="itemF">
+                <div class="re">
+                    <div class="item">
+                        <h3 class="on"><span>1</span><strong>推荐酒店</strong></h3>
+                        <div>
+                            <dl><a target="_blank"
+                                   href="live/hotel_detail.aspx?hotel_id=5"><img src="./images/timg.jpg" /></a>
+                                <p><strong><a
+                                        href="live/hotel_detail.aspx?hotel_id=5" target="_blank">兴文县大自然</a></strong>价格：<span>￥188.00元起</span><br />
+                                </p></dl>
+                            <ul>
+                                <li><a target="_blank" href="live/hotel_detail.aspx?hotel_id=4">寓苑春宾馆</a></li>
+                                <li><a target="_blank" href="live/hotel_detail.aspx?hotel_id=2">僰苑假日酒店</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><span>2</span><strong>推荐餐厅</strong></h3>
+                        <div style="display:none">
+                            <dl><a href="eat/foodshops_detail.aspx?fid=5"><img src="upload/foodshops/" /></a>
+                                <p>
+                                    <strong><a href="eat/foodshops_detail.aspx?fid=5">四川名小吃——刘</a></strong>类型：<span>特色小吃</span><br />
+                                </p></dl>
+                            <ul>
+                                <li><a target="_blank" href="eat/foodshops_detail.aspx?fid=4">兴文县僰苑假日酒</a></li>
+                                <li><a target="_blank" href="eat/foodshops_detail.aspx?fid=3">兴文大酒店餐饮</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><span>3</span><strong>推荐旅行社</strong></h3>
+                        <div style="display:none">
+                            <dl><a href="tour/travel_agency_detail.aspx?tid=1"><img src="upload/travel_agency/" /></a>
+                                <p><strong><a href="tour/travel_agency_detail.aspx?tid=1">四川宜宾光大旅行</a></strong></p></dl>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><span>4</span><strong>推荐娱乐场所</strong></h3>
+                        <div style="display:none">
+                            <dl><a href="play/playplace_detail.aspx?pid="><img src="upload/playplace/" /></a>
+                                <p><strong><a href="play/playplace_detail.aspx?pid="></a></strong><!--<br />电话：--></p>
+                            </dl>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="maps">
+                    <img src="images/i4.jpg" />
+                </div>
+                <div class="clearit"></div>
+            </div>
+        </div>
+        <div class="indexRight">
+            <div class="itemA">
+                <h3>虚拟游</h3>
+                <ul><a href="xuniyou/" target="_blank"><img src="images/i5.jpg" /></a></ul>
+            </div>
+            <div class="itemB">
+                <a href="/tour/scenic_detail.aspx?sid=1"><img src="images/s2.jpg" /></a>
+                <a href="/tour/scenic_detail.aspx?sid=2"><img src="images/s3.jpg" /></a>
+                <img src="images/s4.jpg" />
+            </div>
+            <div class="itemC">
+                <h3>行程安排</h3>
+                <ul>
+                    <li><label>行程要求</label><select>
+                        <option>请选择</option>
+                    </select></li>
+                    <li><label>交通方式</label><select>
+                        <option>请选择</option>
+                    </select></li>
+                    <li><label>旅行时间</label><select>
+                        <option>请选择</option>
+                    </select></li>
+                    <li><label>价格区间</label><select>
+                        <option>请选择</option>
+                    </select></li>
+                    <li><label>个人喜好</label><input type="checkbox" />美食
+                        <input type="checkbox" />自由<br /><input type="checkbox" />景观 <input type="checkbox" />民族文化
+                    </li>
+                    <li>
+                        <button type="submit" onclick="javascript:window.location.href='/tour/line.aspx'">确 定</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="itemD">
+                <p><a href="/diy/" target="_blank">定制我的线路</a></p>
+            </div>
+            <div class="itemE">
+                <h3>旅游社区登录</h3>
+                <ul>
+                    <li><input type="text" class="input" value="邮箱/会员帐号" /></li>
+                    <li><input type="text" class="input" value="请输入密码" /></li>
+                    <li><input type="checkbox" class="checkbox" />记住登录<a href="#">忘记了密码？</a></li>
+                    <li>
+                        <button type="submit">立即登录</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="itemF">
+                <h3>旅游小贴士</h3>
+                <ul>
+                    <li><a href="/?Travel/" target="_blank" class="a1">门票预订</a></li>
+                    <li><a href="/?Live/" target="_blank" class="a2">酒店预订</a></li>
+                    <li><a href="/" target="_blank" class="a3">天气预报</a></li>
+                    <li><a href="/service/knowledge_list.aspx" target="_blank" class="a4">出游常识</a></li>
+                    <li><a href="/service/faq.aspx" target="_blank" class="a5">常见问题</a></li>
+                    <li><a href="/service/yellowpage.aspx" target="_blank" class="a6">常用电话</a></li>
+                    <li><a href="/" target="_blank" class="a7">列车查询</a></li>
+                    <li><a href="/" target="_blank" class="a8">航班查询</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearit"></div>
+        <div class="friendLink">
+            <strong>友情链接</strong>
+            <ul>
+                <li>
+                    <a href="/" title="http://www.yibin.gov.cn/" target="_blank"><img
+                            title="中国宜宾" src="./images/fl.jpg" /></a>
+                </li>
+                <li>
+                    <a href="/" title="http://www.ems517.com/" target="_blank"><img
+                            title="峨眉山" src="./images/fl.jpg" /></a>
+                </li>
+            </ul>
+            <dl>
+                <dd><a href="/?" target="_blank">兴文旅游商城</a></dd>
+                <dd><a href="" target="_blank">兴文县旅游政务网</a></dd>
+                <dd><a href="" target="_blank">兴文农家乐协会</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="nav">
+            <ul>
+                <li><a href="/service/info_view.aspx?aid=5" target="_blank">关于我们</a></li>
+                <li><a href="/service/info_view.aspx?aid=6" target="_blank">广告服务</a></li>
+                <li><a href="/service/info_view.aspx?aid=7" target="_blank">联系方式</a></li>
+                <li><a href="/service/info_view.aspx?aid=8" target="_blank">网站声明</a></li>
+                <li><a href="/service/info_view.aspx?aid=9" target="_blank">诚聘英才</a></li>
+                <li><a href="/service/info_view.aspx?aid=10" target="_blank">合作伙伴</a></li>
+                <li><a href="#">返回顶部</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div class="l">
+                &copy; Copyright &copy; 2013.Company name All rights reserved.
+            </div>
+</body>
+</html>
